@@ -10,6 +10,11 @@ namespace Day14LinkListProblem
     {
         public int data;
         public node next;
+
+        public node()
+        {
+        }
+
         public node(int data)
         {
             this.data = data;

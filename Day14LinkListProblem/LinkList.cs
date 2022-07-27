@@ -137,5 +137,40 @@ namespace Day14LinkListProblem
             }
 
         }
+
+        public void SearchElement(int searchValue)
+        {
+            node temp = new node();  
+            temp = this.head;
+            int found = 0;
+            int i = 0;
+
+            if (temp != null)
+            {
+                while (temp != null)
+                {
+                    i++;
+                    if (temp.data == searchValue)
+                    {
+                        found++;
+                        break;
+                    }
+                    temp = temp.next;
+                }
+                if (found == 1)
+                {
+                    Console.WriteLine(searchValue + " is found at index = " + i + ".");
+                }
+                else
+                {
+                    Console.WriteLine(searchValue + " is not found in the list.");
+                }
+            }
+            else
+            {
+                Console.WriteLine("The list is empty.");
+            }
+        }
+
     }
 }
