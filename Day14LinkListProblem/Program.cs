@@ -38,6 +38,10 @@ namespace Day14LinkListProblem
 
             linklist.push_at(40, 3);
             linklist.Display();
+
+            //Delete an element at position 3
+            linklist.pop_at(3);
+            linklist.Display();
         }
 
     }

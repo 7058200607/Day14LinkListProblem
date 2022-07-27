@@ -210,6 +210,41 @@ namespace Day14LinkListProblem
                 }
             }
         }
+        public void pop_at(int position)
+        {
+            if (position < 1)
+            {
+                Console.Write("\nposition should be >= 1.");
+            }
+            else if (position == 1 && head != null)
+            {
+                node nodeToDelete = head;
+                head = head.next;
+                nodeToDelete = null;
+            }
+            else
+            {
+                node temp = new node();
+                temp = head;
+                for (int i = 1; i < position - 1; i++)
+                {
+                    if (temp != null)
+                    {
+                        temp = temp.next;
+                    }
+                }
+                if (temp != null && temp.next != null)
+                {
+                    node nodeToDelete = temp.next;
+                    temp.next = temp.next.next;
+                    nodeToDelete = null;
+                }
+                else
+                {
+                    Console.Write("\nThe node is already null.");
+                }
+            }
+        }
 
     }
 }
