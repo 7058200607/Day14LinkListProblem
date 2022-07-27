@@ -107,6 +107,15 @@ namespace Day14LinkListProblem
             return head;
 
         }
+        public void pop_front()
+        {
+            if (this.head != null)
+            {
+                node temp = this.head;
+                this.head = this.head.next;
+                temp = null;
+            }
+        }
 
     }
 }
