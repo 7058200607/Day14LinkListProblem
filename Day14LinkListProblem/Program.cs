@@ -29,13 +29,15 @@ namespace Day14LinkListProblem
             linklist.pop_front();
            linklist.Display();*/
 
-            linklist.pop_back(70);
-            linklist.Display();
+           // linklist.pop_back(70);
+            //linklist.Display();
 
             linklist.SearchElement(30);
             linklist.SearchElement(56);
             linklist.SearchElement(70);
 
+            linklist.push_at(40, 3);
+            linklist.Display();
         }
 
     }
