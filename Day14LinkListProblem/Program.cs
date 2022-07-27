@@ -17,6 +17,13 @@ namespace Day14LinkListProblem
             linklist.Add(70);
 
             linklist.Display();
+            linklist.Appending(56);
+            linklist.Appending(30);
+            linklist.Appending(70);
+            linklist.Display();
+
+            linklist.InsertAtPerticularPosition(30, 2);
+            linklist.Display();
 
 
         }
