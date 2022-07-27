@@ -16,7 +16,7 @@ namespace Day14LinkListProblem
             linklist.Add(30);
             linklist.Add(70);
 
-            linklist.Display();
+            /*linklist.Display();
             linklist.Appending(56);
             linklist.Appending(30);
             linklist.Appending(70);
@@ -27,6 +27,9 @@ namespace Day14LinkListProblem
 
             Console.WriteLine("Delete First element from Link List ");
             linklist.pop_front();
+           linklist.Display();*/
+
+            linklist.pop_back(70);
             linklist.Display();
 
         }
